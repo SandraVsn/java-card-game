@@ -2,7 +2,6 @@ package com.openclassroom.cardgame.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.openclassrooms.cardgame.model.PlayingCard;
 
 public class Hand {

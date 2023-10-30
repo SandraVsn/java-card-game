@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import com.openclassrooms.cardgame.model.PlayingCard;
+import com.openclassrooms.cardgame.model.Suit;
 
 public class Deck {
 
@@ -19,10 +21,10 @@ public class Deck {
                 System.out.println("Creating card [" + rank + "][" + suit + "]");
             }
         }
-        suffle();
+        shuffle();
     }
 
-    private void suffle() {
+    public void shuffle() {
         Random random = new Random();
         for (int i = 0; i < cards.size(); i++) {
             Collections.swap(cards, i, random.nextInt(cards.size()));

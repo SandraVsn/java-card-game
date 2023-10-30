@@ -1,6 +1,7 @@
 package com.openclassrooms.cardgame.model;
 
 import com.openclassroom.cardgame.model.Hand;
+import com.openclassroom.cardgame.model.PlayingCard;
 
 public class Player {
     private String name;
@@ -23,5 +24,9 @@ public class Player {
 
     public PlayingCard removeCard() {
         return hand.removeCard();
+    }
+
+    public String getName() {
+        return name;
     }
 }

@@ -1,5 +1,8 @@
 package com.openclassrooms.cardgame.model;
 
+import com.openclassrooms.cardgame.model.Rank;
+import com.openclassrooms.cardgame.model.Suit;
+
 public class PlayingCard {
     private Rank rank;
     private Suit suit;
