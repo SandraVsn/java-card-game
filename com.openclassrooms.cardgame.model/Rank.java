@@ -1,4 +1,4 @@
-package com.openclassroom.cardgame.model;
+package com.openclassrooms.cardgame.model;
 
 public enum Rank {
     TWO(2),

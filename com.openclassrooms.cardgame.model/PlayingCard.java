@@ -1,4 +1,4 @@
-package com.openclassroom.cardgame.model;
+package com.openclassrooms.cardgame.model;
 
 public class PlayingCard {
     private Rank rank;

@@ -3,7 +3,7 @@ package com.openclassroom.cardgame.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.openclassroom.cardgame.model.PlayingCard;
+import com.openclassrooms.cardgame.model.PlayingCard;
 
 public class Hand {
     private List<PlayingCard> cards;
