@@ -1,4 +1,4 @@
-package com.openclassroom.cardgame.model;
+package com.openclassrooms.cardgame.model;
 
 import java.util.ArrayList;
 import java.util.List;
