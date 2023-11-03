@@ -1,9 +1,6 @@
 package com.openclassrooms.cardgame.model;
 
-import com.openclassroom.cardgame.model.Hand;
-import com.openclassroom.cardgame.model.PlayingCard;
-
-public class Player {
+public class Player implements IPlayer {
     private String name;
     private Hand hand;
 
