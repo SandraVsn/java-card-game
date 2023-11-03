@@ -107,6 +107,7 @@ public class GameController {
                 bestSuit = pc.getSuit().value();
             }
         }
+        this.winner = bestPlayer;
     }
 
     void displayWinner() {

@@ -18,6 +18,8 @@ public class Deck {
 
         for (Rank rank : Rank.values()) {
             for (Suit suit : Suit.values()) {
+                PlayingCard card = new PlayingCard(rank, suit);
+                cards.add(card);
                 System.out.println("Creating card [" + rank + "][" + suit + "]");
             }
         }
