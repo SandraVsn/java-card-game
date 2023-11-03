@@ -8,23 +8,9 @@ import java.util.Random;
 import com.openclassrooms.cardgame.model.PlayingCard;
 import com.openclassrooms.cardgame.model.Suit;
 
-public class Deck {
+public abstract class Deck {
 
-    private List<PlayingCard> cards;
-
-    // Constructor
-    public Deck() {
-        cards = new ArrayList<PlayingCard>();
-
-        for (Rank rank : Rank.values()) {
-            for (Suit suit : Suit.values()) {
-                PlayingCard card = new PlayingCard(rank, suit);
-                cards.add(card);
-                System.out.println("Creating card [" + rank + "][" + suit + "]");
-            }
-        }
-        shuffle();
-    }
+    protected List<PlayingCard> cards;
 
     public void shuffle() {
         Random random = new Random();

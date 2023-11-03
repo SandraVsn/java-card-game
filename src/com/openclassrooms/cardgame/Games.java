@@ -4,6 +4,8 @@ import com.openclassrooms.cardgame.controller.GameController;
 import com.openclassrooms.cardgame.games.HightCardGameEvaluator;
 import com.openclassrooms.cardgame.games.LowCardGameEvaluator;
 import com.openclassrooms.cardgame.model.Deck;
+import com.openclassrooms.cardgame.model.DeckFactory;
+import com.openclassrooms.cardgame.model.DeckFactory.DeckType;
 import com.openclassrooms.cardgame.view.ComandLineView;
 import com.openclassrooms.cardgame.view.GameSwingView;
 
@@ -13,7 +15,8 @@ public class Games {
         // HightCardGameEvaluator());
         GameSwingView view = new GameSwingView();
         view.createAndShowGUI();
-        GameController gc = new GameController(new Deck(), view, new HightCardGameEvaluator());
+        GameController gc = new GameController(DeckFactory.makeDeck(DeckType.Normal), view,
+                new HightCardGameEvaluator());
 
         gc.run();
     }
